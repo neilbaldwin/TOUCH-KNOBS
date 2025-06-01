@@ -42,5 +42,27 @@ The creation/customisation parameters go in the Tag parameter of the Knob (Group
 To make a new Knob just copy-and-paste and existing one then change it's parameters in the Tag.
 
 > [!NOTE]
-> A note
+> To make a Knob of a different size, hold SHIFT and resize the Knob group. The resized Knob won't display correctly until you exit Edit mode in Touch OSC as the Knob geometry is calculated at run-time based on the size of the Knob group.
 
+## Customisation
+
+You can set various parameters to customise the colours, geometry and various other options of the TOUCH-KNOB.
+
+The way you do this is to create a parameter string the the Knob object's Tag parameter.
+
+The parameters take the form of `parameter=value`. You can specify multiple parameters by separating them with a comma e.g.: `parameter1=value,parameter2=value`
+
+The parameters can be placed in any order. You can specify as many or as few (none, even!) parameters as you like. Where you don't specify a parameter, sensible defaults will be chosen at run-time.
+
+### Parameters
+
+#### `knob`
+Sets the colour of the Knob body (the main part of the Knob). Defaults to a mid-gray colour if not specifed.
+
+e.g `knob=red` or `knob=0x808080`
+
+#### `pointer`
+Sets the colour of the Knob pointer/position indicator. Defaults to either a ligher or darker version of the body color depnding on the perceived luminance of the body color.
+
+#### 'pointer_size`
+Sets the size of the Knob pointer. This is a normalised value
