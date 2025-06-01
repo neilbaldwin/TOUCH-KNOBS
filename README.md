@@ -42,7 +42,7 @@ To make a new Knob just copy-and-paste and existing one then change it's paramet
 
 To make a Knob of a different size, hold SHIFT and resize the Knob group. The resized Knob won't display correctly until you exit Edit mode in Touch OSC as the Knob geometry is calculated at run-time based on the size of the Knob group.
 
-> ![TIP]
+> [!TIP]
 > How To Use TOUCH-KNOBS
 > 1) Copy the root script to the root of your project.
 > 2) Copy and paste a TOUCH-KNOB object then customise it via the Tag parameter
