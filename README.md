@@ -82,4 +82,23 @@ Set the range of rotation for the knob pointer and is an integer number between 
 
 e.g. `angle=300`
 
+#### `style`
+Sets the *style* of the Knob. This is just a visual embelishment to give the impression of a pseudo-3D knob (if required). There are three options: `flat`, `short` and `tall`. Default is `flat`.
+
+e.g. `style=tall`
+
+#### `shadow`
+Turns a drop-shadow effect on or off. Options are `true` or `false`. Default is `false`
+
+e.g. `shadow=true`
+
+#### `outline`
+Adds a colored outline to the knob body. Options are `true` or `false`. Default is `false`
+
+e.g. `outline=false`
+
+#### `outline_color`
+Sets the color of the body outline. If this parameter is not specified the outline colour is a darker version of the body color.
+
+e.g. `outline_color=white` or `outline_color=0xFF0000`
 
