@@ -24,11 +24,9 @@ In addition, the geometry of the Knob (and it's sub-components) is all re-calcul
 
 Download the TOUCH-KNOBS.tosc file and open it in Touch OSC. You will see a bunch of TOUCH-KNOBS to play with. We'll get to the customisation and options but first you need to know the fundamentals.
 
-### TOUCH-KNOB Components
-
 There are two *components* to TOUCH-KNOBS:
 
-#### Root Lua Script
+### Root Lua Script
 
 This script does 95% of the work. It's mainly concerned with parsing the Knob parameters and setting up the geometry, colors and options. It also contains a table of CSS Color Names as when specifying colors in your Knob you can use either the CSS name or a hex string in the format `0xRRGGBB`
 
@@ -42,8 +40,14 @@ The creation/customisation parameters go in the Tag parameter of the Knob (Group
 
 To make a new Knob just copy-and-paste and existing one then change it's parameters in the Tag.
 
-> [!NOTE]
-> To make a Knob of a different size, hold SHIFT and resize the Knob group. The resized Knob won't display correctly until you exit Edit mode in Touch OSC as the Knob geometry is calculated at run-time based on the size of the Knob group.
+To make a Knob of a different size, hold SHIFT and resize the Knob group. The resized Knob won't display correctly until you exit Edit mode in Touch OSC as the Knob geometry is calculated at run-time based on the size of the Knob group.
+
+> ![TIP]
+> How To Use TOUCH-KNOBS
+> 1) Copy the root script to the root of your project.
+> 2) Copy and paste a TOUCH-KNOB object then customise it via the Tag parameter
+>
+> If you already have Lua code in your project root then you'll have to copy and paste the parts in bit-by-bit. I'm assuming if you've already done some Lua coding in your project this won't be too much of an issue for you. If you're struggling give me a shout.
 
 #### Knob Object Scripts
 
