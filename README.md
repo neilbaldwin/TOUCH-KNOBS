@@ -51,7 +51,7 @@ There is a small amount of scripting inside of the TOUCH-KNOB object but you nev
 
 #### Knob SHADOW1 and SHADOW2 Components
 
-In order to render a pseudo-3D look to the knobs there are two objects, SHADOW1 and SHADOW2 that are basically darker versions of the body object that have their Y position offset to make the knob look taller. The size, position and color of these is calculated at run-time.
+In order to render a pseudo-3D look to the knobs there are two objects, SHADOW1 and SHADOW2 inside the TOUCH-KNOB group that are basically darker versions of the body object that have their Y position offset to make the knob look taller. The size, position and color of these is calculated at run-time.
 
 ## Knob Customisation
 
@@ -90,15 +90,18 @@ Set the range of rotation for the knob pointer and is an integer number between 
 
 e.g. `angle=300`
 
+#### `shadow`
+Turns a drop-shadow effect on or off. Options are `true` or `false`. Default is `false`
+
+e.g. `shadow=true`
+
 #### `style`
 Sets the *style* of the Knob. This is just a visual embelishment to give the impression of a pseudo-3D knob (if required). There are three options: `flat`, `short` and `tall`. Default is `flat`.
 
 e.g. `style=tall`
 
-#### `shadow`
-Turns a drop-shadow effect on or off. Options are `true` or `false`. Default is `false`
-
-e.g. `shadow=true`
+> [!NOTE]
+> Drop-shadow will only be displayed on the 'short' and 'tall' style.
 
 #### `outline`
 Adds a colored outline to the knob body. Options are `true` or `false`. Default is `false`
