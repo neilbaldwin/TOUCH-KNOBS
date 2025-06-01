@@ -139,3 +139,11 @@ The fiddly part is if you want to make a Local connection from the TOUCH-KNOB to
 
 The icon will turn white to indicate you need to click on another object to make a local connection. Navigate in your project to the target object and click it. You will now be able to send local values from the TOUCH-KNOB to that target object.
 
+## Support My Work
+
+If you like my work and use it or learn from it, please consider supporting me or just a donation to say thanks:
+
+<a href="https://www.buymeacoffee.com/neilbaldwi3" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;" ></a>
+
+:pray:
+
