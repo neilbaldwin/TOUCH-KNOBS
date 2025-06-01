@@ -45,8 +45,15 @@ To make a new Knob just copy-and-paste and existing one then change it's paramet
 > [!NOTE]
 > To make a Knob of a different size, hold SHIFT and resize the Knob group. The resized Knob won't display correctly until you exit Edit mode in Touch OSC as the Knob geometry is calculated at run-time based on the size of the Knob group.
 
-## Knob 
-## Customisation
+#### Knob Object Scripts
+
+There is a small amount of scripting inside of the TOUCH-KNOB object but you never need to touch it (unless you want to make your own modifications of course).
+
+#### Knob SHADOW1 and SHADOW2 Components
+
+In order to render a pseudo-3D look to the knobs there are two objects, SHADOW1 and SHADOW2 that are basically darker versions of the body object that have their Y position offset to make the knob look taller. The size, position and color of these is calculated at run-time.
+
+## Knob Customisation
 
 You can set various parameters to customise the colours, geometry and various other options of the TOUCH-KNOB.
 
@@ -108,6 +115,12 @@ e.g. `outline_color=white` or `outline_color=0xFF0000`
 > For a list of CSS Color Names see this webpage (there are plenty of others):
 > [CSS Color Names](http://davidbau.com/colors/)
 >
+
+### Mutliple Parameters
+
+You can specify as many or as few of the parameters as you like and, as mentioned earlier in this document, the order of the parameters is not important. To specify multiple parameters just separate them with a comma:
+
+e.g. `body=pink,pointer=black,pointer_size=0.25,shadow=true`
 
 ## Getting Output from a TOUCH-KNOB
 
