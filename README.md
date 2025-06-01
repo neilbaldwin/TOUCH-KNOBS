@@ -113,4 +113,13 @@ e.g. `outline_color=white` or `outline_color=0xFF0000`
 
 A really frustrating limitation of Touch OSC Group objects is that you can't add Messages to them at the top level (MIDI, OSC or Local). This means that getting control values out of a TOUCH-KNOB is not immediately straightforward. Don't worry though, it's not difficult.
 
-You need to add the message to the invisible/hidden Fader object *inside* of the TOUCH-KNOB (this is how you're able to interract with a TOUCH-KNOB)
+You need to add the message to the invisible/hidden Fader object *inside* of the TOUCH-KNOB (the fader is how you're able to interract with a TOUCH-KNOB).
+
+To do this, in Touch OSC editor, double-click a TOUCH-KNOB to "open" it. You'll then be able to see the various comonents that make up the knob object: BODY, POINTER, SHADOW1 etc. Then select the FADER object and add a Message as you would normally.
+
+The fiddly part is if you want to make a Local connection from the TOUCH-KNOB to another object in your project. Because you have to make the connection *inside* of the knob object you're not able to use the keyboard modifier to visually drag a connection to another object. The way to do it is to use the eye-dropper tool in the Local Message:
+
+![Local Message Connection](img/Local%20Message%20Connection.png)
+
+The icon will turn white to indicate you need to click on another object to make a local connection. Navigate in your project to the target object and click it. You will now be able to send local values from the TOUCH-KNOB to that target object.
+
