@@ -102,3 +102,9 @@ Sets the color of the body outline. If this parameter is not specified the outli
 
 e.g. `outline_color=white` or `outline_color=0xFF0000`
 
+> [!TIP]
+> Where a parameter requires a color parameter, the color can be either specified as a CSS Color Name or as a hexadecimal string in the format `0xRRGGBB` where RR=red, GG=gren and BB=blue.
+> For a list of CSS Color Names see this webpage (there are plenty of others):
+> [CSS Color Names](http://davidbau.com/colors/)
+>
+
