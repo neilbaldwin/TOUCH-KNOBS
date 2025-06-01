@@ -15,6 +15,7 @@ TOUCH-KNOBS uses a simple and readable parameter string placed in the Tag parame
 * pointer offset (from edge of knob)
 * three 'styles': "flat", "short" and "tall" (the last two have a pseudo 3D effect)
 * knob outline (on/off and color)
+* rotation angle range
 * drop shadow on/off
 
 In addition, the geometry of the Knob (and it's sub-components) is all re-calculated at run-time based on the dimensions of the Knob object (Group). You *turn* the Knob by touch-dragging up and down rather than the rotational gesture required by the Radial and Encoder objects.
@@ -64,5 +65,21 @@ e.g `knob=red` or `knob=0x808080`
 #### `pointer`
 Sets the colour of the Knob pointer/position indicator. Defaults to either a ligher or darker version of the body color depnding on the perceived luminance of the body color.
 
-#### 'pointer_size`
-Sets the size of the Knob pointer. This is a normalised value
+e.g. `pointer=yellow`
+
+#### `pointer_size`
+Sets the size of the Knob pointer. This is a normalised value (0.0 to 1.0) and is relative to the size of the Knob body.
+
+e.g. `pointer_size=0.25`
+
+#### `pointer_offset`
+Sets the distance of the pointer from the circuference of the knob body. This is a normalised value and is relative to the radius of the knob body.
+
+e.g. `pointer_offset=0.2`
+
+#### `angle`
+Set the range of rotation for the knob pointer and is an integer number between 90 and 330. Default is 270. The angle doesn't affect the range of output from the knob which is always 0.0 to 0.1
+
+e.g. `angle=300`
+
+
