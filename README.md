@@ -16,6 +16,7 @@ TOUCH-KNOBS uses a simple and readable parameter string placed in the Tag parame
 * three 'styles': "flat", "short" and "tall" (the last two have a pseudo 3D effect)
 * knob outline (on/off and color)
 * rotation angle range
+* response factor
 * drop shadow on/off
 
 In addition, the geometry of the Knob (and it's sub-components) is all re-calculated at run-time based on the dimensions of the Knob object (Group). You *turn* the Knob by touch-dragging up and down rather than the rotational gesture required by the Radial and Encoder objects.
@@ -116,6 +117,11 @@ e.g. `outline=false`
 Sets the color of the body outline. If this parameter is not specified the outline colour is a darker version of the body color.
 
 e.g. `outline_color=white` or `outline_color=0xFF0000`
+
+#### `response`
+Sets the response factor of the knob. The actual movement of the knob is controlled by an invisible Fader object inside of the TOUCH-KNOB. This is set to "Relative" response mode. This parameter sets the response factor from 1 to 100. Lower values increase precision but requires more movement to move the knob through it's entire range. Higher numbers give faster movement but less precision.
+
+e.g. `response=50`
 
 > [!TIP]
 > Where a parameter requires a color value, the color can be either specified as a CSS Color Name or as a hexadecimal string in the format `0xRRGGBB` where RR=red, GG=gren and BB=blue.
