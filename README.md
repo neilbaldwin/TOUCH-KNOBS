@@ -45,6 +45,7 @@ To make a new Knob just copy-and-paste and existing one then change it's paramet
 > [!NOTE]
 > To make a Knob of a different size, hold SHIFT and resize the Knob group. The resized Knob won't display correctly until you exit Edit mode in Touch OSC as the Knob geometry is calculated at run-time based on the size of the Knob group.
 
+## Knob 
 ## Customisation
 
 You can set various parameters to customise the colours, geometry and various other options of the TOUCH-KNOB.
@@ -103,8 +104,13 @@ Sets the color of the body outline. If this parameter is not specified the outli
 e.g. `outline_color=white` or `outline_color=0xFF0000`
 
 > [!TIP]
-> Where a parameter requires a color parameter, the color can be either specified as a CSS Color Name or as a hexadecimal string in the format `0xRRGGBB` where RR=red, GG=gren and BB=blue.
+> Where a parameter requires a color value, the color can be either specified as a CSS Color Name or as a hexadecimal string in the format `0xRRGGBB` where RR=red, GG=gren and BB=blue.
 > For a list of CSS Color Names see this webpage (there are plenty of others):
 > [CSS Color Names](http://davidbau.com/colors/)
 >
 
+## Getting Output from a TOUCH-KNOB
+
+A really frustrating limitation of Touch OSC Group objects is that you can't add Messages to them at the top level (MIDI, OSC or Local). This means that getting control values out of a TOUCH-KNOB is not immediately straightforward. Don't worry though, it's not difficult.
+
+You need to add the message to the invisible/hidden Fader object *inside* of the TOUCH-KNOB (this is how you're able to interract with a TOUCH-KNOB)
