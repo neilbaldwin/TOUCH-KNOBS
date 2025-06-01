@@ -1,6 +1,8 @@
 # TOUCH-KNOBS
 Custom modular-style knobs for Touch OSC
 
+![TOUCH-KNOBS](img/TOUCH-KNOBS.png)
+
 ## What is TOUCH-KNOBS?
 
 Born partly out of the desire to have a knob-type object that was simultaneously simpler and more customizable than the stock Radial or Encoder Touch OSC objects, and partly because I got a tiny-bit obsessed with inventing a way to customise objects at run-time.
